@@ -4,14 +4,13 @@ import './App.css'
 import Card from './components/Card'
 import Button from './components/Button'
 import Question from './components/Question'
-
+import qugif from '../public/heyy.gif'
 function App() {
 
   // Define your images here
   const images = {
   
-    quesion : 'https://tenor.com/view/hearts-love-mochi-mochi-peach-cat-cute-gif-16269901'
-    // Add more images as needed
+quesion: qugif    // Add more images as needed
   }
 
   const [loading, setLoading] = useState(true)

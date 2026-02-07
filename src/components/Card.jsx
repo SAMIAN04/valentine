@@ -17,7 +17,7 @@ const Card = ({ bgColor = 'bg-pink-100', text = <Question/>, onClick, Button = <
      
       {gif && (
         <div className="mt-4 flex justify-center">
-          <img src={images.question} alt="card gif" className="max-h-30 rounded" />
+          <img src={gif} alt="card gif" className="max-h-30 rounded" />
         </div>
       )}
        

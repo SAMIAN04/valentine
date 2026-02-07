@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className=' w-[90vw] h-[90vh] mt-[2vh] flex justify-center items-center'>
-     <Card text={<Question text='Heyy cutieee I have a quetion for you ' speed={80}  className='text-black'/>} Button={<Button text='okay'/>} Button2={<Button text='yess what is it???? '/>} gif={"/plan.png"} />
+     <Card text={<Question text='Heyy cutieee I have a quetion for you ' speed={80}  className='text-black'/>} Button={<Button text='okay'/>} Button2={<Button text='yess what is it???? '/>} gif={qugif} />
     </div>
   )
 }

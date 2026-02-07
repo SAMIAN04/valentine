@@ -4,15 +4,14 @@ import './App.css'
 import Card from './components/Card'
 import Button from './components/Button'
 import Question from './components/Question'
-import qugif from '../public/heyy.gif'
+
 function App() {
-
-  // Define your images here
+  const qugif = '/heyy.gif'
   const images = {
-  
-quesion: qugif    // Add more images as needed
+    ques : qugif
   }
-
+  // Define your images here
+ 
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

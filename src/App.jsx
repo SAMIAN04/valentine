@@ -7,11 +7,11 @@ import Question from "./components/Question";
 import You from "./components/You";
 
 function App() {
-  const qugif = "/src/gifs/heyy.gif";
-  const okaygif = "src/gifs/oky.gif";
-  const flowersgif = 'src/gifs/cat.gif'
-  const askinggif = 'src/gifs/asking.gif'
-  const describegif = 'src/gifs/desc.gif'
+  const qugif = "heyy.gif";
+  const okaygif = "oky.gif";
+  const flowersgif = 'cat.gif'
+  const askinggif = 'asking.gif'
+  const describegif = 'desc.gif'
   // Images to preload
   const images = {
     ques: qugif,

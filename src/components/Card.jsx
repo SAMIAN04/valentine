@@ -1,11 +1,8 @@
 import React from 'react'
 import Button from './Button'
 import Question from './Question'
-const images = {
-  question :'/public/heyy.gif'
-}
 
-const Card = ({ bgColor = 'bg-pink-100', text = <Question/>, onClick, Button = <Button/>,Button2 = <Button/>, gif }) => {
+const Card = ({ bgColor = 'bg-pink-100', text = <Question/>, onClick, Button = <Button/>, gif }) => {
 
   return (
   <div className='w-97.5 justify-center'>
@@ -24,7 +21,7 @@ const Card = ({ bgColor = 'bg-pink-100', text = <Question/>, onClick, Button = <
       </div>
       <div className=' mt-4 flex justify-center gap-10'>
         {Button}
-        {Button2}
+        
       </div>
       </div>
   )

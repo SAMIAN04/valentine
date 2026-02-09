@@ -14,7 +14,14 @@ function App() {
   const describegif = 'desc.gif'
   // Images to preload
   const images = {
-    ques: qugif,
+  qugif : "heyy.gif",
+ 
+okaygif : "oky.gif",
+  
+flowersgif : 'cat.gif',
+ 
+askinggif : 'asking.gif',
+describegif :'desc.gif',
   };
 
   // State for loading and card steps
@@ -88,7 +95,7 @@ function App() {
               <Button text="yess what is it????" onClick={yes} />
             </div>
           }
-          gif={qugif}
+          gif={images.qugif}
         />
       )}
 
@@ -105,7 +112,7 @@ function App() {
             <Button text="explain" onClick={() => window.open(w, "_blank")} />
           }
           
-          gif={okaygif}
+          gif={images.okaygif}
         />
       )}
       {step === "yes" && (
@@ -123,7 +130,7 @@ function App() {
               <Button text="maybe i am not sure" onClick={() => window.open(notsure, "_blank")} />
             </div>
           }
-          gif={flowersgif}
+          gif={images.flowersgif}
         />
       )}
       {step === "agree" && (
@@ -141,7 +148,7 @@ function App() {
               <Button text=" yeah i don't like it" onClick={() => window.open(hateyou, "_blank")}/>
             </div>
           }
-          gif={describegif}
+          gif={images.describegif}
         />
       )}
       {step === "mine" && (
@@ -159,7 +166,7 @@ function App() {
               <Button text="not so sure" onClick={() => window.open(notsure, "_blank")} />
             </div>
           }
-          gif={askinggif}
+          gif={images.askinggif}
         />
       )}
 

@@ -11,7 +11,7 @@ body{
 .credits {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 10%;
   animation: scrollCredits 40s linear infinite;
   font-size: 1.2rem;
   line-height: 2rem;

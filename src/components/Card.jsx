@@ -1,30 +1,34 @@
-import React from 'react'
-import Button from './Button'
-import Question from './Question'
+import React from "react";
 
-const Card = ({ bgColor = 'bg-pink-100', text = <Question/>, onClick, Button = <Button/>, gif }) => {
-
+const Card = ({
+  bgColor = "bg-pink-100",
+  text,
+  actions,
+  gif,
+  onClick,
+}) => {
   return (
-  <div className='w-97.5 justify-center'>
-    <div
-      className={`p-5 rounded-lg shadow-md ${bgColor} ${onClick ? 'cursor-pointer' : ''}  justify-center items-center content-center text-xl`}
-      onClick={onClick}
-    >
-      {text}
-     
-      {gif && (
-        <div className="mt-4 flex justify-center">
-          <img src={gif} alt="card gif" className="max-h-30 rounded" />
-        </div>
-      )}
-       
-      </div>
-      <div className=' mt-4 flex justify-center gap-10'>
-        {Button}
-        
-      </div>
-      </div>
-  )
-}
+    <div className="w-full max-w-md text-center">
+      <div
+        className={`p-5 rounded-lg shadow-md ${bgColor} ${
+          onClick ? "cursor-pointer" : ""
+        }`}
+        onClick={onClick}
+      >
+        {text}
 
-export default Card
+        {gif && (
+          <div className="mt-4 flex justify-center">
+            <img src={gif} alt="gif" className="max-h-40 rounded" />
+          </div>
+        )}
+      </div>
+
+      <div className="mt-4 flex justify-center gap-6 flex-wrap">
+        {actions}
+      </div>
+    </div>
+  );
+};
+
+export default Card;

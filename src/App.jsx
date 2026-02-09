@@ -14,6 +14,7 @@ function App() {
     flowersgif: "/cat.gif",
     askinggif: "/asking.gif",
     describegif: "/desc.gif",
+    loading : "/loading.gif"
   };
 
   const [loading, setLoading] = useState(true);
@@ -44,8 +45,9 @@ function App() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen text-white text-xl font-bold">
-        Loading everything for you, my love... 💖
+      <div className="flex flex-col items-center justify-center h-screen text-white text-xl font-bold">
+  <img src={images.loading} alt="gif" className="max-h-40 rounded" />
+        Loading everything for you, Beautiful... 💖
       </div>
     );
   }
@@ -119,6 +121,7 @@ function App() {
 
       {step === "final" && <You />}
     </div>
+     
   );
 }
 

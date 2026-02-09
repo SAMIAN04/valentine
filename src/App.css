@@ -8,3 +8,30 @@ body{
   align-content: center;
   justify-items: center;
 }
+.credits {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  animation: scrollCredits 40s linear infinite;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@keyframes scrollCredits {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+
+@keyframes scrollCredits {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}

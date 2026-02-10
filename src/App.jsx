@@ -14,7 +14,8 @@ function App() {
     flowersgif: "/cat.gif",
     askinggif: "/asking.gif",
     describegif: "/desc.gif",
-    loading : "/loading.gif"
+    loading: "/loading.gif",
+    surprise:"/surprise.gif"
   };
 
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,7 @@ function App() {
     "I am not sure i am your valentine or not . i am still thinking"
   )}`;
   const hateyou = `https://wa.me/+8801329483669?text=${encodeURIComponent(
-    "i hate your chrecter"
+    "i hate your charecter. you are not my type "
   )}`;
 
   // preload images
@@ -60,7 +61,7 @@ function App() {
           text={<Question text="Heyy cutieee I have a question for you" speed={80} />}
           actions={
             <>
-              <Button text="okay" onClick={() => setStep("okay")} />
+              <Button  text="okay" onClick={() => setStep("okay")} />
               <Button text="yess what is it????" onClick={() => setStep("yes")} />
             </>
           }
@@ -78,7 +79,8 @@ function App() {
       {step === "yes" && (
         <Card
           gif={images.flowersgif}
-          text={<Question text="Will you be my valentine" speed={80} />}
+          text={<Question className="text-red-700 font-extrabold" text="WILL YOU" speed={80}  />}
+          textColor={"red"}
           actions={
             <>
               <Button text="yes" onClick={() => setStep("agree")} />
@@ -119,7 +121,17 @@ function App() {
         />
       )}
 
-      {step === "final" && <You />}
+      {step === "final" &&   <Card
+          gif={images.surprise}
+          text={<Question text="you choosed me after all that other options.I want you to know what is going on my mind right now.......      OPEN THE SURPRISE DEAR" speed={80} />}
+          actions={
+            <>
+              <Button text="🎁" classname=" text-4xl  diagonal-shake" onClick={() => setStep("you")} />
+             
+            </>
+          }
+      />}
+      {step === "you" && <You/>}
     </div>
      
   );

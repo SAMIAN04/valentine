@@ -1,8 +1,20 @@
-export default function Button({ text, onClick }) {
+export default function Button({
+  text,
+  onClick,
+  classname = 'romantic-btn'
+}) {
   return (
     <button
-      onClick={onClick}   // <-- this is crucial
-      className="px-4 py-2 bg-pink-500 text-white rounded-3xl hover:bg-pink-600 transition"
+      onClick={onClick}
+      className={`
+        
+        px-5 py-3
+        text-white
+        rounded-2xl
+        transition-all
+        duration-300
+        ${classname}
+      `}
     >
       {text}
     </button>

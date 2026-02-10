@@ -1,16 +1,16 @@
 import React from "react";
 
 const Card = ({
-  bgColor = "bg-pink-100",
+  bgColor = "bg-pink-200",
   text,
   actions,
   gif,
   onClick,
 }) => {
   return (
-    <div className="w-full max-w-md text-center">
+    <div className="w-full max-w-md text-center float">
       <div
-        className={`p-5 rounded-lg shadow-md ${bgColor} ${
+        className={`p-5 rounded-lg shadow-md  ${bgColor} ${
           onClick ? "cursor-pointer" : ""
         }`}
         onClick={onClick}

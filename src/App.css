@@ -1,5 +1,5 @@
 body{
-  background-color: #cea4ff;
+  background-color: #eb9bffc1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,4 +34,111 @@ body{
   to {
     bottom: 0%;
   }
+}
+/* Infinite shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px); }
+  20% { transform: translateX(5px); }
+  30% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  50% { transform: translateX(-3px); }
+  60% { transform: translateX(3px); }
+  70% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+  90% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 1s infinite ease-in-out;
+  display: inline-block; /* IMPORTANT for transform */
+  cursor: pointer;
+}
+@keyframes diagonal-shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(6px, -6px); /* right up */
+  }
+  20% {
+    transform: translate(-6px, 6px); /* left down */
+  }
+  30% {
+    transform: translate(-6px, -6px); /* left up */
+  }
+  40% {
+    transform: translate(6px, 6px); /* right down */
+  }
+  50% {
+    transform: translate(-4px, 4px);
+  }
+  60% {
+    transform: translate(4px, -4px);
+  }
+  70% {
+    transform: translate(-3px, -3px);
+  }
+  80% {
+    transform: translate(3px, 3px);
+  }
+  90% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.diagonal-shake {
+  animation: diagonal-shake 1s infinite ease-in-out;
+  display: inline-block; /* required for transform */
+  cursor: pointer;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+  display: inline-block; /* required for transform */
+}
+.romantic-btn {
+  background: linear-gradient(135deg, #f4297e, #ff3b9d);
+  box-shadow:
+    0 8px 20px rgba(255, 95, 162, 0.35),
+    inset 0 0 0 rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Hover = gentle attraction */
+.romantic-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 12px 30px rgba(255, 95, 162, 0.45);
+}
+
+/* Active = soft kiss press */
+.romantic-btn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow:
+    0 6px 15px rgba(255, 95, 162, 0.35);
+}
+
+/* Focus = subtle glow */
+.romantic-btn:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(255, 133, 194, 0.35),
+    0 10px 25px rgba(255, 95, 162, 0.4);
 }

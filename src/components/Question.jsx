@@ -4,7 +4,8 @@ const TypingText = ({
   text = "Typing...",
   speed = 2,
   loop = false,
-  className = " ",
+  className = "font-semibold ",
+  textcolor ='text-gray-800'
 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -27,7 +28,7 @@ const TypingText = ({
 
   return (
     <span
-      className={`font-sans text-xl h-[200px] sm:text-lg text-gray-800 dark:text-gray-800 ${className} font-semibold`}
+      className={`font-sans text-xl h-[200px] sm:text-lg ${textcolor} ${className} `}
     >
       {displayedText}
       <span className="inline-block ml-0.5 animate-pulse">|</span>

@@ -72,7 +72,7 @@ const You = () => {
   if (loading) {
     return (
       <div className="w-full h-full flex justify-center items-center">
-        <div className="bg-black/70 text-pink-200 px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
+        <div className=" text-pink-200 px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
           <p className="text-xl font-semibold">💫 Just a moment…</p>
           <p className="animate-pulse">{loadingText}</p>
         </div>
@@ -80,7 +80,7 @@ const You = () => {
     );
   }
 
-  // 🟢 YOUR ORIGINAL CONTENT (unchanged)
+  
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="relative w-[90%] max-w-md h-[80vh] rounded-xl overflow-hidden shadow-2xl">
@@ -119,6 +119,7 @@ const You = () => {
 
             <p>You are my Valentine,</p>
             <p>my princess,</p>
+            <p>my crazy little babygirl</p>
             <p>my favorite forever.</p>
 
             <p className="text-lg">💖 This story never ends 💖</p>

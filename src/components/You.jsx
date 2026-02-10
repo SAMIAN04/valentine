@@ -75,7 +75,7 @@ const You = () => {
   if (loading) {
     return (
       <div className="w-full h-full flex justify-center items-center">
-        <div className=" text-pink-200 px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
+        <div className=" text-red-200 px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
           <p className="text-xl font-semibold">💫 Just a moment…</p>
           <p className="animate-pulse">{loadingText}</p>
         </div>
@@ -97,42 +97,79 @@ const You = () => {
         <div className="absolute inset-0 bg-black/60 z-10" />
 
         <div className="absolute inset-0 z-20 flex justify-center">
-          <div className="credits font-semibold text-pink-100 text-center px-6 space-y-4">
+  <div className="credits-wrapper w-full">
+    <div className="credits-track text-pink-200 text-center font-semibold px-6 space-y-4 text-xl ">
 
-           
+      {/* FIRST COPY */}
+      <div className="credits-content space-y-9 text-shadow-xl playwrite">
+        <p>On this Valentine’s Day,</p>
+        <p>a princess said yes,</p>
+        <p>and my world</p>
+        <p>became a storybook.</p>
 
-            <p>On this Valentine’s Day,</p>
-            <p>a princess said yes,</p>
-            <p>and my world</p>
-            <p>became a storybook.</p>
+        <p>You choose me,</p>
+        <p>not for perfection,</p>
+        <p>but for my heart.</p>
 
-            <p>You chose me,</p>
-            <p>not for perfection,</p>
-            <p>but for my heart.</p>
+        <p>Your smile feels like magic,</p>
+        <p>your voice like a soft spell,</p>
+        <p>your presence like home.</p>
 
-            <p>Your smile feels like magic,</p>
-            <p>your voice like a soft spell,</p>
-            <p>your presence like home.</p>
+        <p>I may not have castles,</p>
+        <p>or crowns made of gold,</p>
+        <p>but I promise loyalty,</p>
+        <p>care,</p>
+        <p>and love that stays.</p>
 
-            <p>I may not have castles,</p>
-            <p>or crowns made of gold,</p>
-            <p>but I promise loyalty,</p>
-            <p>care,</p>
-            <p>and love that stays.</p>
+        <p>You are my Valentine,</p>
+        <p>my princess,</p>
+        <p>my crazy little babygirl,</p>
+        <p>my favorite forever.</p>
 
-            <p>You are my Valentine,</p>
-            <p>my princess,</p>
-            <p>my crazy little babygirl</p>
-            <p>my favorite forever.</p>
+        <p className="text-lg">💖 This story never ends 💖</p>
 
-            <p className="text-lg">💖 This story never ends 💖</p>
+        <p className="opacity-80 pt-10">On this Valentine’s Day,</p>
+        <p className="opacity-80">our fairytale continues,</p>
+        <p className="opacity-80">softly, endlessly, with no ending.</p>
+      </div>
 
-            <p className="opacity-80 pt-10">On this Valentine’s Day,</p>
-            <p className="opacity-80">our fairytale continues,</p>
-            <p className="opacity-80">softly, endlessly, with no ending.</p>
+      {/* SECOND COPY (IDENTICAL) */}
+      <div className="credits-content">
+        <p>On this Valentine’s Day,</p>
+        <p>a princess said yes,</p>
+        <p>and my world</p>
+        <p>became a storybook.</p>
 
-          </div>
-        </div>
+        <p>You chose me,</p>
+        <p>not for perfection,</p>
+        <p>but for my heart.</p>
+
+        <p>Your smile feels like magic,</p>
+        <p>your voice like a soft spell,</p>
+        <p>your presence like home.</p>
+
+        <p>I may not have castles,</p>
+        <p>or crowns made of gold,</p>
+        <p>but I promise loyalty,</p>
+        <p>care,</p>
+        <p>and love that stays.</p>
+
+        <p>You are my Valentine,</p>
+        <p>my princess,</p>
+        <p>my crazy little babygirl,</p>
+        <p>my favorite forever.</p>
+
+        <p className="text-lg">💖 This story never ends 💖</p>
+
+        <p className="opacity-80 pt-10">On this Valentine’s Day,</p>
+        <p className="opacity-80">our fairytale continues,</p>
+        <p className="opacity-80">softly, endlessly, with no ending.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
         <audio autoPlay loop>
           <source src="/princess.mp3" type="audio/mpeg" />

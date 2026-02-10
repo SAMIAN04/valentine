@@ -99,7 +99,7 @@ const You = () => {
         <div className="absolute inset-0 z-20 flex justify-center">
           <div className="credits font-semibold text-pink-100 text-center px-6 space-y-4">
 
-            <p className="text-xl">✨ Valentine’s Fairytale ✨</p>
+           
 
             <p>On this Valentine’s Day,</p>
             <p>a princess said yes,</p>

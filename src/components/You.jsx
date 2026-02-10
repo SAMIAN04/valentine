@@ -5,6 +5,9 @@ const images = [
   "/you2.jpg",
   "/you3.jpg",
   "/you4.jpg",
+  "/you5.jpg",
+  "/you6.jpg",
+
 ];
 
 const loadingMessages = [

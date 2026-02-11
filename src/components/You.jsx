@@ -11,11 +11,11 @@ const images = [
 ];
 
 const loadingMessages = [
-  "✨ Preparing our fairytale…",
-  "👑 Waking up the princess magic…",
-  "💖 Gathering Valentine dreams…",
-  "🎶 Tuning the princess melody…",
-  "📸 Collecting our sweetest memories…",
+  "✨ why are you smiling already....",
+  "👑 awww the smile on princess face",
+  "💖 someone gonna blush in a second",
+  "🎶 you looks beautifull when you smile",
+  "📸 almost there princess",
 ];
 
 const You = () => {
@@ -75,8 +75,8 @@ const You = () => {
   if (loading) {
     return (
       <div className="w-full h-full flex justify-center items-center">
-        <div className=" text-red-200 px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
-          <p className="text-xl font-semibold">💫 Just a moment…</p>
+        <div className=" text-red-200 w-full px-8 py-6 rounded-xl shadow-xl text-center space-y-4">
+          <p className="text-xl font-semibold">everything is getting ready for you....</p>
           <p className="animate-pulse">{loadingText}</p>
         </div>
       </div>
@@ -86,7 +86,7 @@ const You = () => {
   
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <div className="relative w-[90%] max-w-md h-[80vh] rounded-xl overflow-hidden shadow-2xl">
+      <div className="relative w-full h-full max-w-md h-[80vh] rounded-xl overflow-hidden shadow-2xl">
 
         <img
           src={currentImage}

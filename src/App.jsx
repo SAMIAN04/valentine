@@ -42,7 +42,7 @@ function App() {
           })
       )
     ).then(() => setLoading(false));
-  }, []);
+  }, [images]);
 
   if (loading) {
     return (
